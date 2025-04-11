@@ -38,20 +38,19 @@
           </li>
         </ul>
       </address>
-      <button class="burger-btn" type="button">
+      <button class="burger-btn" type="button" data-menu-open>
         <svg class="burger-icon" width="24" height="24">
           <use href="./images/icons.svg#icon-burger-icon"></use>
         </svg>
       </button>
     </div>
-    <div class="mobile-menu">
+    <div class="mobile-menu" data-menu>
       <div class="container mobile-menu-container">
-        <button type="button" class="btn-close">
+        <button type="button" class="btn-close" data-menu-close>
           <svg class="icon-close" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-
         <nav class="mobile-menu-nav">
           <ul class="mobile-menu-nav-list">
             <li class="mobile-menu-nav-item">
@@ -175,7 +174,8 @@
         <h2 class="subtitle">Our Team</h2>
         <ul class="team-list">
           <li class="list-item">
-            <img src="./images/img-9-min.jpg" alt="Mark Guerrero" width="264" height="260" />
+            <img srcset="./images/team/team1-min.jpg 1x, ./images/team/team1@2x-min.jpg 2x"
+              src="./images/team/team1-min.jpg" alt="Mark Guerrero" width="264" height="260" />
             <div class="box-item">
               <h3 class="section-title team-subtitle">Mark Guerrero</h3>
               <p class="section-text team-text">Product Designer</p>
@@ -212,7 +212,8 @@
             </div>
           </li>
           <li class="list-item">
-            <img src="./images/img-8-min.jpg" alt="Tom Ford" width="264" height="260" />
+            <img srcset="./images/team/team2-min.jpg 1x, ./images/team/team2@2x-min.jpg 2x"
+              src="./images/team/team2-min.jpg" alt="Tom Ford" width="264" height="260" />
             <div class="box-item">
               <h3 class="section-title team-subtitle">Tom Ford</h3>
               <p class="section-text team-text">Frontend Developer</p>
@@ -249,7 +250,8 @@
             </div>
           </li>
           <li class="list-item">
-            <img src="./images/img-1-min.jpg" alt="Camila Garcia" width="264" height="260" />
+            <img srcset="./images/team/team3-min.jpg 1x, ./images/team/team3@2x-min.jpg 2x"
+              src="./images/team/team3-min.jpg" alt="Camila Garcia" width="264" height="260" />
             <div class="box-item">
               <h3 class="section-title team-subtitle">Camila Garcia</h3>
               <p class="section-text team-text">Marketing</p>
@@ -286,7 +288,8 @@
             </div>
           </li>
           <li class="list-item">
-            <img src="./images/img-min.jpg" alt="Daniel Wilson" width="264" height="260" />
+            <img srcset="./images/team/team4-min.jpg 1x, ./images/team/team4@2x-min.jpg 2x"
+              src="./images/team/team4-min.jpg" alt="Daniel Wilson" width="264" height="260" />
             <div class="box-item">
               <h3 class="section-title team-subtitle">Daniel Wilson</h3>
               <p class="section-text team-text">UI Designer</p>
@@ -331,7 +334,15 @@
         <ul class="portfolio-list">
           <li class="list-item-portfolio">
             <div class="img-overlay">
-              <img src="./images/img-2-min.jpg" alt="Banking App" width="360" height="300" />
+              <picture>
+                <source media="(min-width: 1158px)"
+                  srcset="./images/portfolio/desk-1-min.jpg 1x, ./images/portfolio/desk-1@2x-min.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="./images/portfolio/tab-1-min.jpg 1x, ./images/portfolio/tab-1@2x-min.jpg 2x">
+                <source media="(max-width: 767px)"
+                  srcset="./images/portfolio/mob-1-min.jpg 1x, /images/portfolio/mob-1@2x-min.jpg 2x">
+                <img src="./images/portfolio/desk-1-min.jpg" alt="Banking App" width="360" height="300" />
+              </picture>
               <p class="text-overlay">
                 14 Stylish and User-Friendly App Design Concepts · Task
                 Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -345,7 +356,15 @@
           </li>
           <li class="list-item-portfolio">
             <div class="img-overlay">
-              <img src="./images/img-3-min.jpg" alt="Cashless Payment" width="360" height="300" />
+              <picture>
+                <source media="(min-width: 1158px)"
+                  srcset="./images/portfolio/desk-2-min.jpg 1x, ./images/portfolio/desk-2@2x-min.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="./images/portfolio/tab-2-min.jpg 1x, ./images/portfolio/tab-2@2x-min.jpg 2x">
+                <source media="(max-width: 767px)"
+                  srcset="./images/portfolio/mob-2-min.jpg 1x, /images/portfolio/mob-2@2x-min.jpg 2x">
+                <img src="./images/portfolio/desk-2-min.jpg" alt="Banking App" width="360" height="300" />
+              </picture>
               <p class="text-overlay">
                 14 Stylish and User-Friendly App Design Concepts · Task
                 Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -359,7 +378,15 @@
           </li>
           <li class="list-item-portfolio">
             <div class="img-overlay">
-              <img src="./images/img-4-min.jpg" alt="Meditation App" width="360" height="300" />
+              <picture>
+                <source media="(min-width: 1158px)"
+                  srcset="./images/portfolio/desk-3-min.jpg 1x, ./images/portfolio/desk-3@2x-min.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="./images/portfolio/tab-3-min.jpg 1x, ./images/portfolio/tab-3@2x-min.jpg 2x">
+                <source media="(max-width: 767px)"
+                  srcset="./images/portfolio/mob-3-min.jpg 1x, /images/portfolio/mob-3@2x-min.jpg 2x">
+                <img src="./images/portfolio/desk-3-min.jpg" alt="Banking App" width="360" height="300" />
+              </picture>
               <p class="text-overlay">
                 14 Stylish and User-Friendly App Design Concepts · Task
                 Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -373,7 +400,15 @@
           </li>
           <li class="list-item-portfolio">
             <div class="img-overlay">
-              <img src="./images/img-5-min.jpg" alt="Taxi Service" width="360" height="300" />
+              <picture>
+                <source media="(min-width: 1158px)"
+                  srcset="./images/portfolio/desk-4-min.jpg 1x, ./images/portfolio/desk-4@2x-min.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="./images/portfolio/tab-4-min.jpg 1x, ./images/portfolio/tab-4@2x-min.jpg 2x">
+                <source media="(max-width: 767px)"
+                  srcset="./images/portfolio/mob-4-min.jpg 1x, /images/portfolio/mob-4@2x-min.jpg 2x">
+                <img src="./images/portfolio/desk-4-min.jpg" alt="Banking App" width="360" height="300" />
+              </picture>
               <p class="text-overlay">
                 14 Stylish and User-Friendly App Design Concepts · Task
                 Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -387,7 +422,15 @@
           </li>
           <li class="list-item-portfolio">
             <div class="img-overlay">
-              <img src="./images/img.screen-min.jpg" alt="Screen Illustrations" width="360" height="300" />
+              <picture>
+                <source media="(min-width: 1158px)"
+                  srcset="./images/portfolio/desk-5-min.jpg 1x, ./images/portfolio/desk-5@2x-min.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="./images/portfolio/tab-5-min.jpg 1x, ./images/portfolio/tab-5@2x-min.jpg 2x">
+                <source media="(max-width: 767px)"
+                  srcset="./images/portfolio/mob-5-min.jpg 1x, /images/portfolio/mob-5@2x-min.jpg 2x">
+                <img src="./images/portfolio/desk-5-min.jpg" alt="Banking App" width="360" height="300" />
+              </picture>
               <p class="text-overlay">
                 14 Stylish and User-Friendly App Design Concepts · Task
                 Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -401,7 +444,15 @@
           </li>
           <li class="list-item-portfolio">
             <div class="img-overlay">
-              <img src="./images/img-7-min.jpg" alt="Online Courses" width="360" height="300" />
+              <picture>
+                <source media="(min-width: 1158px)"
+                  srcset="./images/portfolio/desk-6-min.jpg 1x, ./images/portfolio/desk-6@2x-min.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="./images/portfolio/tab-6-min.jpg 1x, ./images/portfolio/tab-6@2x-min.jpg 2x">
+                <source media="(max-width: 767px)"
+                  srcset="./images/portfolio/mob-6-min.jpg 1x, /images/portfolio/mob-6@2x-min.jpg 2x">
+                <img src="./images/portfolio/desk-6-min.jpg" alt="Banking App" width="360" height="300" />
+              </picture>
               <p class="text-overlay">
                 14 Stylish and User-Friendly App Design Concepts · Task
                 Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -417,7 +468,6 @@
       </div>
     </section>
   </main>
-
   <footer class="page-footer">
     <div class="container footer-container">
       <div class="footer-content">
@@ -468,7 +518,7 @@
           <label class="label-footer-form">
             <input class="input-footer" name="input-footer" type="email" placeholder="E-mail" />
           </label>
-          <button class="btn-footer" type="submit">
+          <button class="btn-footer" type="button" data-modal-open>
             Subscribe
             <svg class="footer-svg" width="24" height="24">
               <use href="./images/icons.svg#icon-send"></use>
@@ -478,29 +528,20 @@
       </div>
     </div>
   </footer>
-
-
-
-
-  <!--
-    <div class="backdrop">
-      <div class="modal">
-        <button type="button" class="btn-close">
-          <svg class="icon-close" width="8" height="8">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-        <p class="modal-title">Leave your contacts and we will call you back</p>
-        <form class="modal-form">
+  <div class="backdrop" data-modal>
+    <div class="modal">
+      <button type="button" class="btn-close" data-modal-close>
+        <svg class="icon-close" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <p class="modal-title">Leave your contacts and we will call you back</p>
+      <form class="modal-form">
+        <div class="inputs-text">
           <div class="inputs">
             <label class="modal-label" for="user-name">Name</label>
             <div class="modal-input-wrap">
-              <input
-                class="modal-input"
-                type="text"
-                name="user-name"
-                id="user-name"
-              />
+              <input class="modal-input" type="text" name="user-name" id="user-name" />
               <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
@@ -509,12 +550,7 @@
           <div class="inputs">
             <label class="modal-label" for="user-tel">Phone</label>
             <div class="modal-input-wrap">
-              <input
-                class="modal-input"
-                type="text"
-                name="user-tel"
-                id="user-tel"
-              />
+              <input class="modal-input" type="text" name="user-tel" id="user-tel" />
               <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
@@ -523,12 +559,7 @@
           <div class="inputs">
             <label class="modal-label" for="user-email">Email</label>
             <div class="modal-input-wrap">
-              <input
-                class="modal-input"
-                type="text"
-                name="user-email"
-                id="user-email"
-              />
+              <input class="modal-input" type="text" name="user-email" id="user-email" />
               <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
@@ -536,35 +567,31 @@
           </div>
           <div class="inputs input-checkbox">
             <label class="modal-label" for="user-comment">Comment</label>
-            <textarea
-              class="textarea-comment"
-              name="user-comment"
-              id="user-comment"
-              placeholder="Text input"
-            ></textarea>
+            <textarea class="textarea-comment" name="user-comment" id="user-comment"
+              placeholder="Text input"></textarea>
           </div>
-          <div class="modal-checkbox">
-            <input
-              class="checkbox-privacy visually-hidden"
-              type="checkbox"
-              id="user-privacy"
-              value="true"
-              name="user-privacy"
-            />
-            <label class="privacy-text" for="user-privacy">
-              <span class="privacy-span">
-                <svg class="modal-svg" width="10" height="8">
-                  <use href="./images/icons.svg#icon-checked"></use>
-                </svg>
-              </span>
+        </div>
+        <div class="modal-checkbox">
+          <input class="checkbox-privacy visually-hidden" type="checkbox" id="user-privacy" value="true"
+            name="user-privacy" />
+          <label class="privacy-text" for="user-privacy">
+            <span class="privacy-span">
+              <svg class="modal-svg" width="10" height="8">
+                <use href="./images/icons.svg#icon-checked"></use>
+              </svg>
+            </span>
+            <span class="privacy-span-text">
               I accept the terms and conditions of the
               <a href="" class="privacy-link">Privacy Policy</a>
-            </label>
-          </div>
-          <button class="modal-btn" type="submit">Send</button>
-        </form>
-      </div>
-    </div> -->
+            </span>
+          </label>
+        </div>
+        <button class="modal-btn" type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>
